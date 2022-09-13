@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:id="@+id/languageBtn"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_marginVertical="@dimen/small1"
+    android:layout_marginHorizontal="@dimen/small1"
+    android:paddingVertical="@dimen/paddingMedium"
+    android:focusable="true">
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/languageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/smallText5"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:text=""/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/checkmark"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/checkmark"
+        android:layout_height="wrap_content"/>
+
+</com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+

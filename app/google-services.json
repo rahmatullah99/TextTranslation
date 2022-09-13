@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "407214745084",
+    "project_id": "smart-translate-fa449",
+    "storage_bucket": "smart-translate-fa449.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407214745084:android:ed4e102c829b6487c3fe79",
+        "android_client_info": {
+          "package_name": "com.smart.translateapp.ocr.phototranslator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407214745084-7c6d3bu6eluhv6t0hh55oa6lnvo3637m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH7gKgchpH7EcfW4XtRSOAv_97HTtVG5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407214745084-7c6d3bu6eluhv6t0hh55oa6lnvo3637m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

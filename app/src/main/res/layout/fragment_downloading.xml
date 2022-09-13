@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/large2"
+    android:paddingVertical="@dimen/paddingMedium"
+    android:paddingHorizontal="@dimen/paddingMedium"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    tools:context=".Translating">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/marginSmall"
+        android:textSize="@dimen/mediumText"
+        android:text="@string/downloading" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/marginSmall"
+        android:src="@drawable/loading"
+        android:layout_height="@dimen/medium1" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
