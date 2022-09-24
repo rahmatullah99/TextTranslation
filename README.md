@@ -2,7 +2,7 @@
 App to translate text in more than 50 languages.
 Users can choose from which language to translate and to which language.
 
-Technologies used - Android Studio, Coroutines, Google ML Kit
+Technologies used - Android Studio, Coroutines, Google Translate API and Google ML Kit
 
 **Screesnhots**
 
