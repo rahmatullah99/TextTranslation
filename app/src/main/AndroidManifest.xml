@@ -4,6 +4,7 @@
     package="com.smart.translateapp.ocr.phototranslator">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
@@ -16,6 +17,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartTranslate"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
         <activity
             android:name=".PrivacyPolicy"
             android:exported="false" />

@@ -40,7 +40,8 @@ class LanguageAdapter(val context: Context, val side:Int, private val tappedLang
     }
 }
 
-class LanguageViewHolder(private val binding: LanguageListItemBinding, private val context: Context)
+class LanguageViewHolder(private val binding: LanguageListItemBinding,
+                         private val context: Context)
     : RecyclerView.ViewHolder(binding.root){
 
     val TAG="LangaugeVH"
@@ -65,10 +66,10 @@ class LanguageViewHolder(private val binding: LanguageListItemBinding, private v
             languageBtn.setOnClickListener {
                 if(side==1){
                     val oldLanguage = preferences.getString("fromCode","en")!!
-                    manageFromModel(oldLanguage,language.code)
+                  //  manageFromModel(oldLanguage,language.code)
                 }else{
                     val oldLanguage = preferences.getString("toCode","en")!!
-                    manageToModel(oldLanguage,language.code)
+                   // manageToModel(oldLanguage,language.code)
                 }
                 tappedLanguage(language)
             }

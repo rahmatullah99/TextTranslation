@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/ocrConstraintLayout"
     tools:context=".Settings">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/capturedImage"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -168,7 +169,7 @@
         android:id="@+id/textFromPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/mediumText"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/cl"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -120,7 +121,6 @@
         android:orientation="horizontal"
         android:padding="@dimen/paddingLarge"
         android:clickable="true"
-        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.0"

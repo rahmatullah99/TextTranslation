@@ -1,15 +1,13 @@
 package com.smart.translateapp.ocr.phototranslator
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.mlkit.common.model.DownloadConditions
-import com.google.mlkit.common.model.RemoteModelManager
 import com.google.mlkit.nl.translate.TranslateLanguage
-import com.google.mlkit.nl.translate.TranslateRemoteModel
 import com.smart.translateapp.ocr.phototranslator.databinding.ActivityLanguageBinding
 
 class Languages : AppCompatActivity() {
@@ -23,7 +21,9 @@ class Languages : AppCompatActivity() {
     private val FROM_LANGUAGE_SIDE=1
     private val TO_LANGUAGE_SIDE=2
 
-    private val TAG="Language"
+    private val LANGUAGE_ACTIVITY=5
+
+    private val TAG="Languages"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +31,7 @@ class Languages : AppCompatActivity() {
         setContentView(binding.root)
 
         val intent = intent
+
         languageSide = intent.getIntExtra("languageSide",0)
 
         binding.apply {
@@ -38,8 +39,7 @@ class Languages : AppCompatActivity() {
             autoDetectRadioBtn.setOnClickListener { selectAutoDetect() } }
 
         if(languageSide==1){
-            languageList.add(Language("Auto Translate","Auto Translate",false))
-        }
+            languageList.add(Language("Auto Translate","Auto Translate",false)) }
 
         setLanguageList()
 
@@ -193,6 +193,7 @@ class Languages : AppCompatActivity() {
 
             val intent = Intent(this@Languages, TextTranslate::class.java)
             intent.putExtra("language",language.languageName)
+            intent.putExtra("activity",LANGUAGE_ACTIVITY)
 
             val preferences = getSharedPreferences("sp", Context.MODE_PRIVATE)
             val editor = preferences.edit()
@@ -213,7 +214,7 @@ class Languages : AppCompatActivity() {
                     apply() }
                 intent.putExtra("to code",language.code)
                 intent.putExtra("side",2) }
-            startActivity(intent)
+            setResult(Activity.RESULT_OK, intent)
             finish()
 
         }
